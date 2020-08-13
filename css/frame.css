@@ -117,7 +117,7 @@ hr {
 }
 
 .menu-container {
-  z-index: 2;
+  z-index: 2f;
   position: fixed;
   top: 0;
   width: 100%;
