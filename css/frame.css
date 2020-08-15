@@ -359,6 +359,12 @@ hr {
     border-top-right-radius: 15px !important;***/
     min-height: 60px !important;
 }
+.dweek-image{
+    margin-top: 0 !important; 
+    margin-bottom: 15px !important;
+    /***border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;***/
+}
 
 .ex-team {
   position: relative;
