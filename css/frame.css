@@ -79,6 +79,20 @@ d2 {
   font-weight: bold;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
+
+d3 {
+  font-size: 24px;
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  align-items: center;
+  
+}
+
+d3::first-letter {
+  color: #006eb8;
+}
 h2-2::before{
     content: '';
     position:absolute;
@@ -305,11 +319,25 @@ hr {
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-  margin: 0 auto;
+  margin: 0px 1px;
   font-size: 16px;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
+    
+}
+
+.week2 {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  margin: 0px 1px;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+    
 }
 .actual{
     box-shadow: 0 4px 8px 0 rgba(12, 137, 65, 0.31), 0 6px 20px 0 rgba(7, 137, 58, 0.17)
@@ -327,9 +355,9 @@ hr {
 .week-image{
     margin-top: 0 !important; 
     margin-bottom: 15px !important;
-    border-top-left-radius: 15px !important;
-    border-top-right-radius: 15px !important;
-    min-height: 190px !important;
+    /***border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;***/
+    min-height: 60px !important;
 }
 
 .ex-team {
@@ -367,6 +395,18 @@ hr {
   padding: 20px 10px;
   width: 100%;
   margin: 0;
+}
+.content-general {
+  padding: 10px 10px;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content-general2 {
+  padding: 0px 5px;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .flex-column {
@@ -473,7 +513,7 @@ hr {
 .image {
   border-radius: 2px;
   width: 100%;
-  margin: 15px 0;
+  margin: 15px 0px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -483,10 +523,20 @@ hr {
   display: flex;
 }
 
+.dimage {
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+}
 .image img,
 .image video {
   width: 100%;
-  height: auto;
+  height: 10%;
   box-sizing: border-box;
   display: table-cell;
   overflow: hidden;
@@ -516,7 +566,7 @@ hr {
   color: #4d5676;
   text-align: center;
   margin-top: -10px;
-  margin-bottom: 10px;
+  
 }
 
 .max-width-400 {
