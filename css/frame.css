@@ -22,13 +22,16 @@ body {
 }
 
 ::selection {
-  color: #ffffff;
-  background: #092188;
+
 }
 
 a {
-  outline: none;
-  cursor: pointer;
+    outline: none;
+    cursor: pointer;
+}
+
+ad {
+    
 }
 
 b {
@@ -423,6 +426,9 @@ hr {
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
+}
+.flex-column2 {
+
 }
 
 .flex-row-space-between {
@@ -831,7 +837,26 @@ ol.publication.A-list li p:before {
   width: 100%;
   padding: 0 10px;
 }
+.gallery2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content:stretch;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
+}
 
+.gallery2 a {
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  cursor: default;
+
+}
 .gallery a {
   border: 1px solid rgba(0, 0, 0, 0);
   color: black;
@@ -856,8 +881,22 @@ ol.publication.A-list li p:before {
   background-position: center;
   min-height: 50px;
 }
+.gallery2 a>img,
+.gallery2 a>video {
+  border-radius: 2px;
+  width: 100%;
+  background-image: url(../img/loading.gif);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+  min-height: 50px;
+}
 
 .gallery a>div {
+  width: 100%;
+  text-align: center;
+}
+.gallery2 a>div {
   width: 100%;
   text-align: center;
 }
@@ -947,9 +986,21 @@ ol.publication.A-list li p:before {
     max-width: 25%;
   }
 }
-
+@media screen and (min-width: 900px) {
+  .gallery2 a {
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
+}
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .gallery a {
+    flex: 1 0 33.3%;
+    max-width: 33.3%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .gallery2 a {
     flex: 1 0 33.3%;
     max-width: 33.3%;
   }
@@ -961,9 +1012,21 @@ ol.publication.A-list li p:before {
     max-width: 50%;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .gallery2 a {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .gallery a {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallery2 a {
     flex: 1 0 100%;
     max-width: 100%;
   }
