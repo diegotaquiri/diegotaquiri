@@ -262,6 +262,7 @@ hr {
 }
 
 .fa {
+    
   padding: 10px;
   font-size: 20px;
   border-radius: 50%;
@@ -272,7 +273,7 @@ hr {
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .fa-facebook {
